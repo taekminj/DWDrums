@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DW Drums</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Welcom to DW Drums.">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <span class="montRR14 active">P R O D U C T S</span>
+                        <ol class="nunSS12 active">
+                            <li class="active"><a href="products_shopall_01.html">S H O P A L L</a></li>
+                            <li><a href="products_drums_01.html">D R U M S</a></li>
+                            <li><a href="products_pedals_01.html">P E D A L S</a></li>
+                            <li><a href="products_hardware_01.html">H A R D W A R E</a></li>
+                            <li><a href="products_software.html">S O F T W A R E</a></li>
+                            <li><a href="products_parts_01.html">P A R T S  &  A C C E S S O R I E S</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="montRR14">S T O R I E S</span>
+                        <ol class="nunSS12">
+                            <li><a href="stories_01.html">D W  S E S S I O N S</a></li>
+                            <li><a href="stories_02.html">D W E</a></li>
+                            <li><a href="stories_03.html">T H E  W O R K S H O P</a></li>
+                            <li><a href="stories_04.html">D W E  T I P S  &  T R I C K S</a></li>
+                            <li><a href="stories_05.html">F O U N D E R ‘ S  F E E D</a></li>
+                            <li><a href="stories_06.html">D W 5 0</a></li>
+                            <li><a href="stories_07.html">T H E  V A U L T</a></li>
+                        </ol>
+                    </li>
+                    <li class="montRR14">
+                        <a href="artists_01.html">A R T I S T S</a>
+                    </li>
+                </ul>
+                <img src="images/btn_header_close.png" alt="close btn">
+            </nav>
+            <ul>
+                <li>
+                    <input class="montRR14" type="search" placeholder="Search by category, name ..." title="search button"> 
+                    <input type="button" value="close">
+                </li>
+                <li><a href="account_sign.html">account</a></li>
+                <li><a href="map.html">map</a></li>
+                <li><a href="cart.html">cart</a></li>
+                <li><img src="images/ico_header_menu.png" alt="header menu"></li>
+            </ul>
+        </div>
+    </header>
+    <section class="listContainer">
+        <div class="flexA wrapSM JCCSM AICD">
+            <div>
+                <h2 class="barHI54">Explore all things DW.</h2>
+                <p class="barRO16">From customized drums to industry standard hardware and parts, all DW product are the result of 50 years of inspiration, innovation, and craftsmanship.</p>
+            </div>
+            <img src="images/bg_products_shopall.png" alt="all product">
+        </div>
+        <ul class="flexAJCBD textCenter">
+            <li>
+                <a href="products_drums_01.html"><img src="images/nav_drums.png" alt="drums list"></a>      
+                <strong class="montRR16">Drums</strong>
+                <small class="nunMM14">Handcrafted to your sound.</small>
+            </li>
+            <li>
+                <a href="products_pedals_01.html"><img src="images/nav_pedals.png" alt="pedals list"></a>      
+                <strong class="montRR16">Pedals</strong>
+                <small class="nunMM14">A pedal for your pocket.</small>
+            </li>
+            <li>
+                <a href="products_hardware_01.html"><img src="images/nav_hardware.png" alt="hardware list"></a>      
+                <strong class="montRR16">Hardware</strong>
+                <small class="nunMM14">Built to last.</small>
+            </li>
+            <li>
+                <a href="products_software.html"><img src="images/nav_software.png" alt="software list"></a>      
+                <strong class="montRR16">Software</strong>
+                <small class="nunMM14">DW Drums. Now virtual.</small>
+            </li>
+            <li>
+                <a href="products_parts_01.html"><img src="images/nav_parts.png" alt="parts list"></a>      
+                <strong class="montRR16">Parts and Accessories</strong>
+                <small class="nunMM14">Mod out your DW kit.</small>
+            </li>
+        </ul>
+        <div>
+            <h3 class="rhcUL36 floatBoxNERM">
+                Product All
+                <small>sort menu</small>
+            </h3>
+            <div>
+                <span class="montMM12">SORT:</span>
+                <span class="montMM12">Price to</span>
+                <input type="radio" name="priceSelect" id="lowPrice" checked>
+                <label class="montMM12" for="lowPrice">Low</label>
+                <span>/</span>
+                <input type="radio" name="priceSelect" id="highPrice">
+                <label class="montMM12" for="highPrice">High</label>
+                <span class="graphPrice">
+                    <span>pricegraph1</span>
+                    <span>pricegraph2</span>
+                    <span>pricegraph3</span>
+                </span>
+                <span class="montMM12">GRID:</span>
+                <input type="radio" name="gridSelect" id="secondRow">
+                <label class="montMM12" for="secondRow">2</label>
+                <input type="radio" name="gridSelect" id="thirdRow" checked>
+                <label class="montMM12" for="thirdRow">3</label>
+                <span class="boxGrid">
+                    <span>gridbox1</span>
+                    <span>gridbox2</span>
+                    <span>gridbox3</span>
+                    <span>gridbox4</span>
+                    <span>gridbox5</span>
+                    <span>gridbox6</span>
+                    <span>gridbox7</span>
+                    <span>gridbox8</span>
+                    <span>gridbox9</span>
+                </span>
+            </div>
+            <ul class="rowThird floatBoxP">
+                <li>
+                    <a href="product_091.html"><img src="images/product_091.png" alt="5000 Series 5 Piece Hardware Pack"></a>
+                    <div>
+                        <h4 class="montRR16">5000 Series 5 Piece Hardware Pack</h4>
+                        <strong class="nunBB12">$1079.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_092.html"><img src="images/product_092.png" alt="5000 Series 6 Piece Hardware Pack"></a>
+                    <div>
+                        <h4 class="montRR16">5000 Series 6 Piece Hardware Pack</h4>
+                        <strong class="nunBB12">$1,279.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_093.html"><img src="images/product_093_01.png" alt="5000 Straight Cymbal Stand"></a>
+                    <div>
+                        <h4 class="montRR16">5000 Straight Cymbal Stand</h4>
+                        <strong class="nunBB12">$169.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_094.html"><img src="images/product_094_01.png" alt="5000 Series Low Boy Hi-Hat Stand"></a>
+                    <div>
+                        <h4 class="montRR16">5000 Series Low Boy Hi-Hat Stand</h4>
+                        <strong class="nunBB12">$229.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_095.html"><img src="images/product_095_01.png" alt="5000 Series Tractor Top Throne"></a>
+                    <div>
+                        <h4 class="montRR16">5000 Series Tractor Top Throne</h4>
+                        <mark class="productHit">HIT</mark>
+                        <strong class="nunBB12">$179.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_096.html"><img src="images/product_096_01.png" alt="3000 Straight Cymbal Stand"></a>
+                    <div>
+                        <h4 class="montRR16">3000 Straight Cymbal Stand</h4>
+                        <strong class="nunBB12">$99.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_097.html"><img src="images/product_097_01.png" alt="3000 Series Snare Stand"></a>
+                    <div>
+                        <h4 class="montRR16">3000 Series Snare Stand</h4>
+                        <strong class="nunBB12">$119.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_098.html"><img src="images/product_098_01.png" alt="3000 Series 3-Leg Hi-Hat Stand"></a>
+                    <div>
+                        <h4 class="montRR16">3000 Series 3-Leg Hi-Hat Stand</h4>
+                        <strong class="nunBB12">$199.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_099.html"><img src="images/product_099_01.png" alt="3000 Series Hardware Pack, 4-Piece"></a>
+                    <div>
+                        <h4 class="montRR16">3000 Series Hardware Pack, 4-Piece</h4>
+                        <strong class="nunBB12">$469.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_100.html"><img src="images/product_100_01.png" alt="3000 Series Round Top Throne"></a>
+                    <div>
+                        <h4 class="montRR16">3000 Series Round Top Throne</h4>
+                        <strong class="nunBB12">$119.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_101.html"><img src="images/product_101_01.png" alt="DW Soundworks™"></a>
+                    <div>
+                        <h4 class="montRR16">DW Soundworks™</h4>
+                        <strong class="nunBB12">$23.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_102.html"><img src="images/product_102_01.png" alt="DW Soundworks Vintage 1958 Exp Pack"></a>
+                    <div>
+                        <h4 class="montRR16">DW Soundworks Vintage 1958 Exp Pack</h4>
+                        <mark class="productHit">HIT</mark>
+                        <strong class="nunBB12">$31.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_103.html"><img src="images/product_103_01.png" alt="DW Soundworks Pure Maple Exp Pack"></a>
+                    <div>
+                        <h4 class="montRR16">DW Soundworks Pure Maple Exp Pack</h4>
+                        <strong class="nunBB12">$27.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_104.html"><img src="images/product_104_01.png" alt="DW Soundworks Maple-Mahog. Exp Pack"></a>
+                    <div>
+                        <h4 class="montRR16">DW Soundworks Maple-Mahog. Exp Pack</h4>
+                        <strong class="nunBB12">$33.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_105.html"><img src="images/product_105_01.png" alt="DW Soundworks Pure Almond Exp. Pack"></a>
+                    <div>
+                        <h4 class="montRR16">DW Soundworks Pure Almond Exp. Pack</h4>
+                        <strong class="nunBB12">$38.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_106.html"><img src="images/product_106.png" alt="AA 2-Ply Coated Tom Batter Drum Head"></a>
+                    <div>
+                        <h4 class="montRR16">AA 2-Ply Coated Tom Batter Drum Head</h4>
+                        <small class="nunMM14">6 inch</small>
+                        <strong class="nunBB12">$14.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_107.html"><img src="images/product_107.png" alt="Coated Tom Head"></a>
+                    <div>
+                        <h4 class="montRR16">Coated Tom Head</h4>
+                        <small class="nunMM14">8 inch</small>
+                        <strong class="nunBB12">$16.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_108.html"><img src="images/product_108.png" alt="Smooth White Vented Bass Drum Head"></a>
+                    <div>
+                        <h4 class="montRR16">Smooth White Vented Bass Drum Head</h4>
+                        <mark class="productHit">HIT</mark>
+                        <small class="nunMM14">26 inch</small>
+                        <strong class="nunBB12">$349.00</strong>
+                    </div>
+                </li>
+            </ul>
+            <div class="pager">
+                <a class="nunSS12" href="products_shopall_05.html">Prev</a>
+                <ol class="montMM12">
+                    <li><a href="products_shopall_01.html">1</a></li>
+                    <li><a href="products_shopall_02.html">2</a></li>
+                    <li><a href="products_shopall_03.html">3</a></li>
+                    <li><a href="products_shopall_04.html">4</a></li>
+                    <li><a href="products_shopall_05.html">5</a></li>
+                    <li class="active">6</li>
+                    <li><a href="products_shopall_07.html">7</a></li>
+                    <li><a href="products_shopall_08.html">8</a></li>
+                    <li><a href="products_shopall_09.html">9</a></li>
+                </ol>
+                <a class="nunSS12" href="products_shopall_07.html">Next</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div>
+                <h2 class="montRR16">COMPANY</h2>
+                <ul class="nunMM12">
+                    <li><a href="https://www.dwmf.org/" target="_blank">DW Music Foundation</a></li>
+                    <li><a href="footer_shippping.html">Shipping&Returns</a></li>
+                    <li><a href="footer_warranty.html">Warranty</a></li>
+                    <li><a href="footer_contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="montRR16">SUPPORT</h2>
+                <ul class="nunMM12">
+                    <li><a href="https://support.dwdrums.com/hc/en-us" target="_blank">FAQs</a></li>
+                    <li><a href="footer_legal.html">Legal</a></li>
+                    <li><a href="footer_accessibility.html">Accessibility</a></li>
+                    <li><a href="footer_privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="footer_terms_of_use.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="montRR16">SUBSCRIBE</h2>
+                <div>
+                    <input class="monRR16" type="email" placeholder="Enter your email for updates" title="email address">
+                    <input type="submit" value="subscribe">
+                    <p class="montRR16">Thanks for subscribing!</p>
+                </div>
+                <ul>
+                    <li><a href="https://www.facebook.com/dwdrums" target="_blank">facebook</a></li>
+                    <li><a href="https://x.com/dwdrums" target="_blank">twitter</a></li>
+                    <li><a href="https://www.instagram.com/dwdrums/" target="_blank">instagram</a></li>
+                    <li><a href="https://www.youtube.com/c/dwdrums" target="_blank">youtube</a></li>
+                </ul>
+            </div>
+            <p class="montMM12">
+                All products listed on this website are done so at U.S. MAP pricing or Minimum Advertised Price. This is the lowest price that an authorized U.S. retailer can advertise products as dictated by the manufacturer. All prices are subject to change without notice.
+                <cite>©2024 Drum Workshop, Inc. All Rights Reserved.</cite>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

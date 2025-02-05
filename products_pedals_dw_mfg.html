@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DW Drums</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Welcom to DW Drums.">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <span class="montRR14 active">P R O D U C T S</span>
+                        <ol class="nunSS12 active">
+                            <li><a href="products_shopall_01.html">S H O P A L L</a></li>
+                            <li><a href="products_drums_01.html">D R U M S</a></li>
+                            <li class="active"><a href="products_pedals_01.html">P E D A L S</a></li>
+                            <li><a href="products_hardware_01.html">H A R D W A R E</a></li>
+                            <li><a href="products_software.html">S O F T W A R E</a></li>
+                            <li><a href="products_parts_01.html">P A R T S  &  A C C E S S O R I E S</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="montRR14">S T O R I E S</span>
+                        <ol class="nunSS12">
+                            <li><a href="stories_01.html">D W  S E S S I O N S</a></li>
+                            <li><a href="stories_02.html">D W E</a></li>
+                            <li><a href="stories_03.html">T H E  W O R K S H O P</a></li>
+                            <li><a href="stories_04.html">D W E  T I P S  &  T R I C K S</a></li>
+                            <li><a href="stories_05.html">F O U N D E R ‘ S  F E E D</a></li>
+                            <li><a href="stories_06.html">D W 5 0</a></li>
+                            <li><a href="stories_07.html">T H E  V A U L T</a></li>
+                        </ol>
+                    </li>
+                    <li class="montRR14">
+                        <a href="artists_01.html">A R T I S T S</a>
+                    </li>
+                </ul>
+                <img src="images/btn_header_close.png" alt="close btn">
+            </nav>
+            <ul>
+                <li>
+                    <input class="montRR14" type="search" placeholder="Search by category, name ..." title="search button"> 
+                    <input type="button" value="close">
+                </li>
+                <li><a href="account_sign.html">account</a></li>
+                <li><a href="map.html">map</a></li>
+                <li><a href="cart.html">cart</a></li>
+                <li><img src="images/ico_header_menu.png" alt="header menu"></li>
+            </ul>
+        </div>
+    </header>
+    <section class="listContainer">
+        <div class="flexA wrapSM JCCSM AICD">
+            <div>
+                <h2 class="barHI54">Machined excellence.</h2>
+                <p class="barRO16">These precision-machined pedals are handcrafted in the U.S.A. of airplane-grade materials to continue the elevation of the craft of drumming.</p>
+            </div>
+            <img src="images/bg_products_pedals_mfg.png" alt="pedal mfg series products">
+        </div>
+        <div class="featuresPedalMfg">
+            <h3 class="rhcHA52 textCenter gS05">Key Features</h3>
+            <ul class="floatBoxDTL flexM textCenterM">
+                <li>
+                    <img src="images/features_pedal_mfg_01.png" alt="Intuitive design">
+                    <h4 class="montRR30 brS05">Intuitive design</h4>
+                    <p class="montRR16 gS06">Designed, tested, and built to withstand serious play on the road, night-in and night-out.</p>
+                </li>
+                <li>
+                    <img src="images/features_pedal_mfg_02.png" alt="Machined parts">
+                    <h4 class="montRR30 brS05">Machined parts</h4>
+                    <p class="montRR16 gS06">Features aircraft-grade aluminum parts machined in Oxnard, California.</p>
+                </li>
+                <li>
+                    <img src="images/features_pedal_mfg_03.png" alt="Floating rotor">
+                    <h4 class="montRR30 brS05">Floating rotor</h4>
+                    <p class="montRR16 gS06">Game-changing floating rotor for natural pedal feel and response.</p>
+                </li>
+                <li>
+                    <img src="images/features_pedal_mfg_04.png" alt="Infinitely adjustable">
+                    <h4 class="montRR30 brS05">Infinitely adjustable</h4>
+                    <p class="montRR16 gS06">Endless adjustment options to fit your style of play or music.</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="rhcUL36 floatBoxNERM">
+                Product All
+                <small>sort menu</small>
+            </h3>
+            <div>
+                <span class="montMM12">SORT:</span>
+                <span class="montMM12">Price to</span>
+                <input type="radio" name="priceSelect" id="lowPrice" checked>
+                <label class="montMM12" for="lowPrice">Low</label>
+                <span>/</span>
+                <input type="radio" name="priceSelect" id="highPrice">
+                <label class="montMM12" for="highPrice">High</label>
+                <span class="graphPrice">
+                    <span>pricegraph1</span>
+                    <span>pricegraph2</span>
+                    <span>pricegraph3</span>
+                </span>
+                <span class="montMM12">GRID:</span>
+                <input type="radio" name="gridSelect" id="secondRow">
+                <label class="montMM12" for="secondRow">2</label>
+                <input type="radio" name="gridSelect" id="thirdRow" checked>
+                <label class="montMM12" for="thirdRow">3</label>
+                <span class="boxGrid">
+                    <span>gridbox1</span>
+                    <span>gridbox2</span>
+                    <span>gridbox3</span>
+                    <span>gridbox4</span>
+                    <span>gridbox5</span>
+                    <span>gridbox6</span>
+                    <span>gridbox7</span>
+                    <span>gridbox8</span>
+                    <span>gridbox9</span>
+                </span>
+            </div>
+            <ul class="rowThird floatBoxP">
+                <li>
+                    <a href="product_048.html">
+                        <img src="images/product_048_01_PAA.png" alt="MFG Direct Drive Single Pedal">
+                        <ul class="nunMM12">
+                            <li class="icoPAA">POLISHED ANODIZED ALUMINUM</li>
+                            <li class="icoGAA">GRAPHITE ANODIZED ALUMINUM</li>
+                            <li class="icoCAA">COBALT ANODIZED ALUMINUM</li>
+                            <li class="icoGMAA">GUN METAL ANODIZED ALUMINUM</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">MFG Direct Drive Single Pedal</h4>
+                        <small class="nunMM14">4 finish options available</small>
+                        <strong class="nunBB12">$649.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_049.html">
+                        <img src="images/product_049_01_PAA.png" alt="MFG Direct Drive Double Pedal">
+                        <ul class="nunMM12">
+                            <li class="icoPAA">POLISHED ANODIZED ALUMINUM</li>
+                            <li class="icoGAA">GRAPHITE ANODIZED ALUMINUM</li>
+                            <li class="icoCAA">COBALT ANODIZED ALUMINUM</li>
+                            <li class="icoGMAA">GUN METAL ANODIZED ALUMINUM</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">MFG Direct Drive Double Pedal</h4>
+                        <small class="nunMM14">4 finish options available</small>
+                        <strong class="nunBB12">$1299.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_050.html">
+                        <img src="images/product_050_01_PAA.png" alt="MFG Chain Drive Single Pedal">
+                        <ul class="nunMM12">
+                            <li class="icoPAA">POLISHED ANODIZED ALUMINUM</li>
+                            <li class="icoGAA">GRAPHITE ANODIZED ALUMINUM</li>
+                            <li class="icoCAA">COBALT ANODIZED ALUMINUM</li>
+                            <li class="icoGMAA">GUN METAL ANODIZED ALUMINUM</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">MFG Chain Drive Single Pedal</h4>
+                        <small class="nunMM14">4 finish options available</small>
+                        <strong class="nunBB12">$669.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_051.html">
+                        <img src="images/product_051_01_PAA.png" alt="MFG Chain Drive Double Pedal">
+                        <ul class="nunMM12">
+                            <li class="icoPAA">POLISHED ANODIZED ALUMINUM</li>
+                            <li class="icoGAA">GRAPHITE ANODIZED ALUMINUM</li>
+                            <li class="icoCAA">COBALT ANODIZED ALUMINUM</li>
+                            <li class="icoGMAA">GUN METAL ANODIZED ALUMINUM</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">MFG Chain Drive Double Pedal</h4>
+                        <small class="nunMM14">4 finish options available</small>
+                        <strong class="nunBB12">$1,339.00</strong>
+                    </div>
+                </li>
+            </ul>
+            <div class="pager">
+                <ol class="montMM12">
+                    <li class="active">1</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div>
+                <h2 class="montRR16">COMPANY</h2>
+                <ul class="nunMM12">
+                    <li><a href="https://www.dwmf.org/" target="_blank">DW Music Foundation</a></li>
+                    <li><a href="footer_shippping.html">Shipping&Returns</a></li>
+                    <li><a href="footer_warranty.html">Warranty</a></li>
+                    <li><a href="footer_contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="montRR16">SUPPORT</h2>
+                <ul class="nunMM12">
+                    <li><a href="https://support.dwdrums.com/hc/en-us" target="_blank">FAQs</a></li>
+                    <li><a href="footer_legal.html">Legal</a></li>
+                    <li><a href="footer_accessibility.html">Accessibility</a></li>
+                    <li><a href="footer_privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="footer_terms_of_use.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="montRR16">SUBSCRIBE</h2>
+                <div>
+                    <input class="monRR16" type="email" placeholder="Enter your email for updates" title="email address">
+                    <input type="submit" value="subscribe">
+                    <p class="montRR16">Thanks for subscribing!</p>
+                </div>
+                <ul>
+                    <li><a href="https://www.facebook.com/dwdrums" target="_blank">facebook</a></li>
+                    <li><a href="https://x.com/dwdrums" target="_blank">twitter</a></li>
+                    <li><a href="https://www.instagram.com/dwdrums/" target="_blank">instagram</a></li>
+                    <li><a href="https://www.youtube.com/c/dwdrums" target="_blank">youtube</a></li>
+                </ul>
+            </div>
+            <p class="montMM12">
+                All products listed on this website are done so at U.S. MAP pricing or Minimum Advertised Price. This is the lowest price that an authorized U.S. retailer can advertise products as dictated by the manufacturer. All prices are subject to change without notice.
+                <cite>©2024 Drum Workshop, Inc. All Rights Reserved.</cite>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

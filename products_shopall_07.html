@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DW Drums</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Welcom to DW Drums.">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <span class="montRR14 active">P R O D U C T S</span>
+                        <ol class="nunSS12 active">
+                            <li class="active"><a href="products_shopall_01.html">S H O P A L L</a></li>
+                            <li><a href="products_drums_01.html">D R U M S</a></li>
+                            <li><a href="products_pedals_01.html">P E D A L S</a></li>
+                            <li><a href="products_hardware_01.html">H A R D W A R E</a></li>
+                            <li><a href="products_software.html">S O F T W A R E</a></li>
+                            <li><a href="products_parts_01.html">P A R T S  &  A C C E S S O R I E S</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="montRR14">S T O R I E S</span>
+                        <ol class="nunSS12">
+                            <li><a href="stories_01.html">D W  S E S S I O N S</a></li>
+                            <li><a href="stories_02.html">D W E</a></li>
+                            <li><a href="stories_03.html">T H E  W O R K S H O P</a></li>
+                            <li><a href="stories_04.html">D W E  T I P S  &  T R I C K S</a></li>
+                            <li><a href="stories_05.html">F O U N D E R ‘ S  F E E D</a></li>
+                            <li><a href="stories_06.html">D W 5 0</a></li>
+                            <li><a href="stories_07.html">T H E  V A U L T</a></li>
+                        </ol>
+                    </li>
+                    <li class="montRR14">
+                        <a href="artists_01.html">A R T I S T S</a>
+                    </li>
+                </ul>
+                <img src="images/btn_header_close.png" alt="close btn">
+            </nav>
+            <ul>
+                <li>
+                    <input class="montRR14" type="search" placeholder="Search by category, name ..." title="search button"> 
+                    <input type="button" value="close">
+                </li>
+                <li><a href="account_sign.html">account</a></li>
+                <li><a href="map.html">map</a></li>
+                <li><a href="cart.html">cart</a></li>
+                <li><img src="images/ico_header_menu.png" alt="header menu"></li>
+            </ul>
+        </div>
+    </header>
+    <section class="listContainer">
+        <div class="flexA wrapSM JCCSM AICD">
+            <div>
+                <h2 class="barHI54">Explore all things DW.</h2>
+                <p class="barRO16">From customized drums to industry standard hardware and parts, all DW product are the result of 50 years of inspiration, innovation, and craftsmanship.</p>
+            </div>
+            <img src="images/bg_products_shopall.png" alt="all product">
+        </div>
+        <ul class="flexAJCBD textCenter">
+            <li>
+                <a href="products_drums_01.html"><img src="images/nav_drums.png" alt="drums list"></a>      
+                <strong class="montRR16">Drums</strong>
+                <small class="nunMM14">Handcrafted to your sound.</small>
+            </li>
+            <li>
+                <a href="products_pedals_01.html"><img src="images/nav_pedals.png" alt="pedals list"></a>      
+                <strong class="montRR16">Pedals</strong>
+                <small class="nunMM14">A pedal for your pocket.</small>
+            </li>
+            <li>
+                <a href="products_hardware_01.html"><img src="images/nav_hardware.png" alt="hardware list"></a>      
+                <strong class="montRR16">Hardware</strong>
+                <small class="nunMM14">Built to last.</small>
+            </li>
+            <li>
+                <a href="products_software.html"><img src="images/nav_software.png" alt="software list"></a>      
+                <strong class="montRR16">Software</strong>
+                <small class="nunMM14">DW Drums. Now virtual.</small>
+            </li>
+            <li>
+                <a href="products_parts_01.html"><img src="images/nav_parts.png" alt="parts list"></a>      
+                <strong class="montRR16">Parts and Accessories</strong>
+                <small class="nunMM14">Mod out your DW kit.</small>
+            </li>
+        </ul>
+        <div>
+            <h3 class="rhcUL36 floatBoxNERM">
+                Product All
+                <small>sort menu</small>
+            </h3>
+            <div>
+                <span class="montMM12">SORT:</span>
+                <span class="montMM12">Price to</span>
+                <input type="radio" name="priceSelect" id="lowPrice" checked>
+                <label class="montMM12" for="lowPrice">Low</label>
+                <span>/</span>
+                <input type="radio" name="priceSelect" id="highPrice">
+                <label class="montMM12" for="highPrice">High</label>
+                <span class="graphPrice">
+                    <span>pricegraph1</span>
+                    <span>pricegraph2</span>
+                    <span>pricegraph3</span>
+                </span>
+                <span class="montMM12">GRID:</span>
+                <input type="radio" name="gridSelect" id="secondRow">
+                <label class="montMM12" for="secondRow">2</label>
+                <input type="radio" name="gridSelect" id="thirdRow" checked>
+                <label class="montMM12" for="thirdRow">3</label>
+                <span class="boxGrid">
+                    <span>gridbox1</span>
+                    <span>gridbox2</span>
+                    <span>gridbox3</span>
+                    <span>gridbox4</span>
+                    <span>gridbox5</span>
+                    <span>gridbox6</span>
+                    <span>gridbox7</span>
+                    <span>gridbox8</span>
+                    <span>gridbox9</span>
+                </span>
+            </div>
+            <ul class="rowThird floatBoxP">
+                <li>
+                    <a href="product_109.html"><img src="images/product_109.png" alt="Coated Clear Tom Drum Head"></a>
+                    <div>
+                        <h4 class="montRR16">Coated Clear Tom Drum Head</h4>
+                        <small class="nunMM14">6 inch</small>
+                        <strong class="nunBB12">$18.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_110.html"><img src="images/product_110.png" alt="Reverse Dot Snare Drum Head"></a>
+                    <div>
+                        <h4 class="montRR16">Reverse Dot Snare Drum Head</h4>
+                        <small class="nunMM14">14 inch</small>
+                        <strong class="nunBB12">$23.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_111.html"><img src="images/product_111.png" alt="Collector's Tom Bracket Memory Lock"></a>
+                    <div>
+                        <h4 class="montRR16">Collector's Tom Bracket Memory Lock</h4>
+                        <strong class="nunBB12">$15.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_112.html"><img src="images/product_112_01.png" alt="Bass Mounted Double Tom Arm w/Track"></a>
+                    <div>
+                        <h4 class="montRR16">Bass Mounted Double Tom Arm w/Track</h4>
+                        <strong class="nunBB12">$250.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_113.html">
+                        <img src="images/product_113_01_CHR.png" alt="Upper Assembly for 9900 Tom Stand">
+                        <ul class="nunMM12">
+                            <li class="icoCHR">CHROME</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">Upper Assembly for 9900 Tom Stand</h4>
+                        <small class="nunMM14">1 finish options available</small>
+                        <strong class="nunBB12">$300.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_114.html">
+                        <img src="images/product_114_01_CHR.png" alt="J-Arm for Cocktail Kit">
+                        <ul class="nunMM12">
+                            <li class="icoCHR">CHROME</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">3000 Straight Cymbal Stand</h4>
+                        <small class="nunMM14">1 finish options available</small>
+                        <strong class="nunBB12">$33.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_115.html"><img src="images/product_115.png" alt="Collector's Series Tom Bracket"></a>
+                    <div>
+                        <h4 class="montRR16">Collector's Series Tom Bracket</h4>
+                        <strong class="nunBB12">$40.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_116.html">
+                        <img src="images/product_116_01_CHR.png" alt="V to Eyebolt Mega Clamp w/L Arm">
+                        <ul class="nunMM12">
+                            <li class="icoCHR">CHROME</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">V to Eyebolt Mega Clamp w/L Arm</h4>
+                        <small class="nunMM14">1 finish options available</small>
+                        <strong class="nunBB12">$50.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_117.html">
+                        <img src="images/product_117_01_CHR.png" alt="Knurled L Arm for V Clamp w/Mem Lock">
+                        <ul class="nunMM12">
+                            <li class="icoCHR">CHROME</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">Knurled L Arm for V Clamp w/Mem Lock</h4>
+                        <small class="nunMM14">1 finish options available</small>
+                        <strong class="nunBB12">$33.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_118.html">
+                        <img src="images/product_118_01_CHR.png" alt="Ratcheting-V-to-1.5&quot; Rack Clamp">
+                        <ul class="nunMM12">
+                            <li class="icoCHR">CHROME</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">Ratcheting-V-to-1.5" Rack Clamp</h4>
+                        <small class="nunMM14">1 finish options available</small>
+                        <strong class="nunBB12">$45.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_119.html">
+                        <img src="images/product_119_01_CHR.png" alt="1.5&quot; to 1.5&quot; 90 Degree Rack Clamp">
+                        <ul class="nunMM12">
+                            <li class="icoCHR">CHROME</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">1.5" to 1.5" 90 Degree Rack Clamp</h4>
+                        <small class="nunMM14">1 finish options available</small>
+                        <strong class="nunBB12">$45.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_120.html">
+                        <img src="images/product_120_01_CHR.png" alt="Tom L-Arm (Ball-in-socket), 1/2&quot;">
+                        <ul class="nunMM12">
+                            <li class="icoCHR">CHROME</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">Tom L-Arm (Ball-in-socket), 1/2"</h4>
+                        <small class="nunMM14">1 finish options available</small>
+                        <strong class="nunBB12">$52.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_121.html">
+                        <img src="images/product_121_01.png" alt="Double Pedal Bag">
+                        <ul class="nunMM12">
+                            <li class="icoBLA">BLACK</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">Double Pedal Bag</h4>
+                        <small class="nunMM14">1 color options available</small>
+                        <strong class="nunBB12">$180.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_122.html">
+                        <img src="images/product_122_01.png" alt="Padded Stick Bag">
+                        <ul class="nunMM12">
+                            <li class="icoBLA">BLACK</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">Padded Stick Bag</h4>
+                        <mark class="productHit">HIT</mark>
+                        <small class="nunMM14">1 color options available</small>
+                        <strong class="nunBB12">$25.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_123.html">
+                        <img src="images/product_123_01.png" alt="Performance Series Low Pro Kit Bag">
+                        <ul class="nunMM12">
+                            <li class="icoBLA">BLACK</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">Performance Series Low Pro Kit Bag</h4>
+                        <small class="nunMM14">1 color options available</small>
+                        <strong class="nunBB12">$250.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_124.html">
+                        <img src="images/product_124_01.png" alt="Pi Depth Deluxe Snare Bag">
+                        <ul class="nunMM12">
+                            <li class="icoBLA">BLACK</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">Pi Depth Deluxe Snare Bag</h4>
+                        <small class="nunMM14">1 color options available </small>
+                        <strong class="nunBB12">$180.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_125.html">
+                        <img src="images/product_125_01.png" alt="6000 Series Ultralight Hardware Bag">
+                        <ul class="nunMM12">
+                            <li class="icoBLA">BLACK</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">6000 Series Ultralight Hardware Bag</h4>
+                        <small class="nunMM14">1 color options available </small>
+                        <strong class="nunBB12">$280.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_126.html"><img src="images/product_126_01.png" alt="Complete Drum Practice Pad Kit"></a>
+                    <div>
+                        <h4 class="montRR16">Complete Drum Practice Pad Kit</h4>
+                        <mark class="productHit">HIT</mark>
+                        <small class="nunMM14">Multiple</small>
+                        <strong class="nunBB12">$230.00</strong>
+                    </div>
+                </li>
+            </ul>
+            <div class="pager">
+                <a class="nunSS12" href="products_shopall_06.html">Prev</a>
+                <ol class="montMM12">
+                    <li><a href="products_shopall_01.html">1</a></li>
+                    <li><a href="products_shopall_02.html">2</a></li>
+                    <li><a href="products_shopall_03.html">3</a></li>
+                    <li><a href="products_shopall_04.html">4</a></li>
+                    <li><a href="products_shopall_05.html">5</a></li>
+                    <li><a href="products_shopall_06.html">6</a></li>
+                    <li class="active">7</li>
+                    <li><a href="products_shopall_08.html">8</a></li>
+                    <li><a href="products_shopall_09.html">9</a></li>
+                </ol>
+                <a class="nunSS12" href="products_shopall_08.html">Next</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div>
+                <h2 class="montRR16">COMPANY</h2>
+                <ul class="nunMM12">
+                    <li><a href="https://www.dwmf.org/" target="_blank">DW Music Foundation</a></li>
+                    <li><a href="footer_shippping.html">Shipping&Returns</a></li>
+                    <li><a href="footer_warranty.html">Warranty</a></li>
+                    <li><a href="footer_contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="montRR16">SUPPORT</h2>
+                <ul class="nunMM12">
+                    <li><a href="https://support.dwdrums.com/hc/en-us" target="_blank">FAQs</a></li>
+                    <li><a href="footer_legal.html">Legal</a></li>
+                    <li><a href="footer_accessibility.html">Accessibility</a></li>
+                    <li><a href="footer_privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="footer_terms_of_use.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="montRR16">SUBSCRIBE</h2>
+                <div>
+                    <input class="monRR16" type="email" placeholder="Enter your email for updates" title="email address">
+                    <input type="submit" value="subscribe">
+                    <p class="montRR16">Thanks for subscribing!</p>
+                </div>
+                <ul>
+                    <li><a href="https://www.facebook.com/dwdrums" target="_blank">facebook</a></li>
+                    <li><a href="https://x.com/dwdrums" target="_blank">twitter</a></li>
+                    <li><a href="https://www.instagram.com/dwdrums/" target="_blank">instagram</a></li>
+                    <li><a href="https://www.youtube.com/c/dwdrums" target="_blank">youtube</a></li>
+                </ul>
+            </div>
+            <p class="montMM12">
+                All products listed on this website are done so at U.S. MAP pricing or Minimum Advertised Price. This is the lowest price that an authorized U.S. retailer can advertise products as dictated by the manufacturer. All prices are subject to change without notice.
+                <cite>©2024 Drum Workshop, Inc. All Rights Reserved.</cite>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

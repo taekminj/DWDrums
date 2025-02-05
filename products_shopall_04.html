@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DW Drums</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Welcom to DW Drums.">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <span class="montRR14 active">P R O D U C T S</span>
+                        <ol class="nunSS12 active">
+                            <li class="active"><a href="products_shopall_01.html">S H O P A L L</a></li>
+                            <li><a href="products_drums_01.html">D R U M S</a></li>
+                            <li><a href="products_pedals_01.html">P E D A L S</a></li>
+                            <li><a href="products_hardware_01.html">H A R D W A R E</a></li>
+                            <li><a href="products_software.html">S O F T W A R E</a></li>
+                            <li><a href="products_parts_01.html">P A R T S  &  A C C E S S O R I E S</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="montRR14">S T O R I E S</span>
+                        <ol class="nunSS12">
+                            <li><a href="stories_01.html">D W  S E S S I O N S</a></li>
+                            <li><a href="stories_02.html">D W E</a></li>
+                            <li><a href="stories_03.html">T H E  W O R K S H O P</a></li>
+                            <li><a href="stories_04.html">D W E  T I P S  &  T R I C K S</a></li>
+                            <li><a href="stories_05.html">F O U N D E R ‘ S  F E E D</a></li>
+                            <li><a href="stories_06.html">D W 5 0</a></li>
+                            <li><a href="stories_07.html">T H E  V A U L T</a></li>
+                        </ol>
+                    </li>
+                    <li class="montRR14">
+                        <a href="artists_01.html">A R T I S T S</a>
+                    </li>
+                </ul>
+                <img src="images/btn_header_close.png" alt="close btn">
+            </nav>
+            <ul>
+                <li>
+                    <input class="montRR14" type="search" placeholder="Search by category, name ..." title="search button"> 
+                    <input type="button" value="close">
+                </li>
+                <li><a href="account_sign.html">account</a></li>
+                <li><a href="map.html">map</a></li>
+                <li><a href="cart.html">cart</a></li>
+                <li><img src="images/ico_header_menu.png" alt="header menu"></li>
+            </ul>
+        </div>
+    </header>
+    <section class="listContainer">
+        <div class="flexA wrapSM JCCSM AICD">
+            <div>
+                <h2 class="barHI54">Explore all things DW.</h2>
+                <p class="barRO16">From customized drums to industry standard hardware and parts, all DW product are the result of 50 years of inspiration, innovation, and craftsmanship.</p>
+            </div>
+            <img src="images/bg_products_shopall.png" alt="all product">
+        </div>
+        <ul class="flexAJCBD textCenter">
+            <li>
+                <a href="products_drums_01.html"><img src="images/nav_drums.png" alt="drums list"></a>      
+                <strong class="montRR16">Drums</strong>
+                <small class="nunMM14">Handcrafted to your sound.</small>
+            </li>
+            <li>
+                <a href="products_pedals_01.html"><img src="images/nav_pedals.png" alt="pedals list"></a>      
+                <strong class="montRR16">Pedals</strong>
+                <small class="nunMM14">A pedal for your pocket.</small>
+            </li>
+            <li>
+                <a href="products_hardware_01.html"><img src="images/nav_hardware.png" alt="hardware list"></a>      
+                <strong class="montRR16">Hardware</strong>
+                <small class="nunMM14">Built to last.</small>
+            </li>
+            <li>
+                <a href="products_software.html"><img src="images/nav_software.png" alt="software list"></a>      
+                <strong class="montRR16">Software</strong>
+                <small class="nunMM14">DW Drums. Now virtual.</small>
+            </li>
+            <li>
+                <a href="products_parts_01.html"><img src="images/nav_parts.png" alt="parts list"></a>      
+                <strong class="montRR16">Parts and Accessories</strong>
+                <small class="nunMM14">Mod out your DW kit.</small>
+            </li>
+        </ul>
+        <div>
+            <h3 class="rhcUL36 floatBoxNERM">
+                Product All
+                <small>sort menu</small>
+            </h3>
+            <div>
+                <span class="montMM12">SORT:</span>
+                <span class="montMM12">Price to</span>
+                <input type="radio" name="priceSelect" id="lowPrice" checked>
+                <label class="montMM12" for="lowPrice">Low</label>
+                <span>/</span>
+                <input type="radio" name="priceSelect" id="highPrice">
+                <label class="montMM12" for="highPrice">High</label>
+                <span class="graphPrice">
+                    <span>pricegraph1</span>
+                    <span>pricegraph2</span>
+                    <span>pricegraph3</span>
+                </span>
+                <span class="montMM12">GRID:</span>
+                <input type="radio" name="gridSelect" id="secondRow">
+                <label class="montMM12" for="secondRow">2</label>
+                <input type="radio" name="gridSelect" id="thirdRow" checked>
+                <label class="montMM12" for="thirdRow">3</label>
+                <span class="boxGrid">
+                    <span>gridbox1</span>
+                    <span>gridbox2</span>
+                    <span>gridbox3</span>
+                    <span>gridbox4</span>
+                    <span>gridbox5</span>
+                    <span>gridbox6</span>
+                    <span>gridbox7</span>
+                    <span>gridbox8</span>
+                    <span>gridbox9</span>
+                </span>
+            </div>
+            <ul class="rowThird floatBoxP">
+                <li>
+                    <a href="product_055.html"><img src="images/product_055_01.png" alt="9000 Series Double Bass Pedal XF"></a>
+                    <div>
+                        <h4 class="montRR16">9000 Series Double Bass Pedal XF</h4>
+                        <strong class="nunBB12">$829.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_056.html"><img src="images/product_056.png" alt="9000 Series Double Bass Pedal, Lefty"></a>
+                    <div>
+                        <h4 class="montRR16">9000 Series Double Bass Pedal, Lefty</h4>
+                        <strong class="nunBB12">$799.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_057.html"><img src="images/product_057_01.png" alt="6000 Single Bass Pedal, Accelerator"></a>
+                    <div>
+                        <h4 class="montRR16">6000 Single Bass Pedal, Accelerator</h4>
+                        <strong class="nunBB12">$269.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_058.html"><img src="images/product_058_01.png" alt="6000 Single Bass Pedal, Turbo"></a>
+                    <div>
+                        <h4 class="montRR16">6000 Single Bass Pedal, Turbo</h4>
+                        <strong class="nunBB12">$269.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_059.html"><img src="images/product_059_01.png" alt="6000 Single Bass Pedal, Nylon Strap"></a>
+                    <div>
+                        <h4 class="montRR16">6000 Single Bass Pedal, Nylon Strap</h4>
+                        <strong class="nunBB12">$269.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_060.html"><img src="images/product_060_01.png" alt="DW50 Carbon Fiber 5000 Single Pedal"></a>
+                    <div>
+                        <h4 class="montRR16">DW50 Carbon Fiber 5000 Single Pedal</h4>
+                        <mark class="productHit">HIT</mark>
+                        <strong class="nunBB12">$449.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_061.html"><img src="images/product_061_01.png" alt="5000 Series Single Bass Pedal"></a>
+                    <div>
+                        <h4 class="montRR16">5000 Series Single Bass Pedal</h4>
+                        <mark class="productHit">HIT</mark>
+                        <strong class="nunBB12">$249.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_062.html"><img src="images/product_062_01.png" alt="5000 Series Double Bass Pedal"></a>
+                    <div>
+                        <h4 class="montRR16">5000 Series Double Bass Pedal</h4>
+                        <strong class="nunBB12">$579.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_063.html"><img src="images/product_063_01.png" alt="5000 Series Single Bass Pedal XF"></a>
+                    <div>
+                        <h4 class="montRR16">5000 Series Single Bass Pedal XF</h4>
+                        <strong class="nunBB12">$269.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_064.html"><img src="images/product_064_01.png" alt="5000 Series Double Bass Pedal XF"></a>
+                    <div>
+                        <h4 class="montRR16">5000 Series Double Bass Pedal XF</h4>
+                        <mark class="productHit">HIT</mark>
+                        <strong class="nunBB12">$599.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_065.html"><img src="images/product_065_01.png" alt="3000 Series Single Bass Pedal"></a>
+                    <div>
+                        <h4 class="montRR16">3000 Series Single Bass Pedal</h4>
+                        <strong class="nunBB12">$149.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_066.html"><img src="images/product_066_01.png" alt="3000 Series Double Bass Pedal"></a>
+                    <div>
+                        <h4 class="montRR16">3000 Series Double Bass Pedal</h4>
+                        <strong class="nunBB12">$329.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_067.html"><img src="images/product_067_01.png" alt="3000 Double Bass Drum Pedal, Lefty"></a>
+                    <div>
+                        <h4 class="montRR16">3000 Double Bass Drum Pedal, Lefty</h4>
+                        <strong class="nunBB12">$329.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_068.html"><img src="images/product_068_01.png" alt="2000 Series Single Bass Pedal"></a>
+                    <div>
+                        <h4 class="montRR16">2000 Series Single Bass Pedal</h4>
+                        <strong class="nunBB12">$99.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_069.html"><img src="images/product_069_01.png" alt="2000 Double Bass Drum Pedal"></a>
+                    <div>
+                        <h4 class="montRR16">2000 Double Bass Drum Pedal</h4>
+                        <strong class="nunBB12">$229.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_070.html"><img src="images/product_070_01.png" alt="2000 Series Tambourine Pedal"></a>
+                    <div>
+                        <h4 class="montRR16">2000 Series Tambourine Pedal</h4>
+                        <strong class="nunBB12">$149.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_071.html">
+                        <img src="images/product_071_01_PAA.png" alt="MFG 2-leg Hi-Hat Stand">
+                        <ul class="nunMM12">
+                            <li class="icoPAA">POLISHED ANODIZED ALUMINUM</li>
+                            <li class="icoGAA">GRAPHITE ANODIZED ALUMINUM</li>
+                            <li class="icoCAA">COBALT ANODIZED ALUMINUM</li>
+                            <li class="icoGMAA">GUN METAL ANODIZED ALUMINUM</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">MFG 2-leg Hi-Hat Stand</h4>
+                        <small class="nunMM14">4 finish options available</small>
+                        <strong class="nunBB12">$429.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_072.html">
+                        <img src="images/product_072_01_PAA.png" alt="MFG 3-leg Hi-Hat Stand">
+                        <ul class="nunMM12">
+                            <li class="icoPAA">POLISHED ANODIZED ALUMINUM</li>
+                            <li class="icoGAA">GRAPHITE ANODIZED ALUMINUM</li>
+                            <li class="icoCAA">COBALT ANODIZED ALUMINUM</li>
+                            <li class="icoGMAA">GUN METAL ANODIZED ALUMINUM</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">MFG 3-leg Hi-Hat Stand</h4>
+                        <small class="nunMM14">4 finish options available</small>
+                        <strong class="nunBB12">$649.00</strong>
+                    </div>
+                </li>
+            </ul>
+            <div class="pager">
+                <a class="nunSS12" href="products_shopall_03.html">Prev</a>
+                <ol class="montMM12">
+                    <li><a href="products_shopall_01.html">1</a></li>
+                    <li><a href="products_shopall_02.html">2</a></li>
+                    <li><a href="products_shopall_03.html">3</a></li>
+                    <li class="active">4</li>
+                    <li><a href="products_shopall_05.html">5</a></li>
+                    <li><a href="products_shopall_06.html">6</a></li>
+                    <li><a href="products_shopall_07.html">7</a></li>
+                    <li><a href="products_shopall_08.html">8</a></li>
+                    <li><a href="products_shopall_09.html">9</a></li>
+                </ol>
+                <a class="nunSS12" href="products_shopall_05.html">Next</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div>
+                <h2 class="montRR16">COMPANY</h2>
+                <ul class="nunMM12">
+                    <li><a href="https://www.dwmf.org/" target="_blank">DW Music Foundation</a></li>
+                    <li><a href="footer_shippping.html">Shipping&Returns</a></li>
+                    <li><a href="footer_warranty.html">Warranty</a></li>
+                    <li><a href="footer_contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="montRR16">SUPPORT</h2>
+                <ul class="nunMM12">
+                    <li><a href="https://support.dwdrums.com/hc/en-us" target="_blank">FAQs</a></li>
+                    <li><a href="footer_legal.html">Legal</a></li>
+                    <li><a href="footer_accessibility.html">Accessibility</a></li>
+                    <li><a href="footer_privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="footer_terms_of_use.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="montRR16">SUBSCRIBE</h2>
+                <div>
+                    <input class="monRR16" type="email" placeholder="Enter your email for updates" title="email address">
+                    <input type="submit" value="subscribe">
+                    <p class="montRR16">Thanks for subscribing!</p>
+                </div>
+                <ul>
+                    <li><a href="https://www.facebook.com/dwdrums" target="_blank">facebook</a></li>
+                    <li><a href="https://x.com/dwdrums" target="_blank">twitter</a></li>
+                    <li><a href="https://www.instagram.com/dwdrums/" target="_blank">instagram</a></li>
+                    <li><a href="https://www.youtube.com/c/dwdrums" target="_blank">youtube</a></li>
+                </ul>
+            </div>
+            <p class="montMM12">
+                All products listed on this website are done so at U.S. MAP pricing or Minimum Advertised Price. This is the lowest price that an authorized U.S. retailer can advertise products as dictated by the manufacturer. All prices are subject to change without notice.
+                <cite>©2024 Drum Workshop, Inc. All Rights Reserved.</cite>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

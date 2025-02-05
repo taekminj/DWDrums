@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DW Drums</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Welcom to DW Drums.">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <span class="montRR14 active">P R O D U C T S</span>
+                        <ol class="nunSS12 active">
+                            <li class="active"><a href="products_shopall_01.html">S H O P A L L</a></li>
+                            <li><a href="products_drums_01.html">D R U M S</a></li>
+                            <li><a href="products_pedals_01.html">P E D A L S</a></li>
+                            <li><a href="products_hardware_01.html">H A R D W A R E</a></li>
+                            <li><a href="products_software.html">S O F T W A R E</a></li>
+                            <li><a href="products_parts_01.html">P A R T S  &  A C C E S S O R I E S</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <span class="montRR14">S T O R I E S</span>
+                        <ol class="nunSS12">
+                            <li><a href="stories_01.html">D W  S E S S I O N S</a></li>
+                            <li><a href="stories_02.html">D W E</a></li>
+                            <li><a href="stories_03.html">T H E  W O R K S H O P</a></li>
+                            <li><a href="stories_04.html">D W E  T I P S  &  T R I C K S</a></li>
+                            <li><a href="stories_05.html">F O U N D E R ‘ S  F E E D</a></li>
+                            <li><a href="stories_06.html">D W 5 0</a></li>
+                            <li><a href="stories_07.html">T H E  V A U L T</a></li>
+                        </ol>
+                    </li>
+                    <li class="montRR14">
+                        <a href="artists_01.html">A R T I S T S</a>
+                    </li>
+                </ul>
+                <img src="images/btn_header_close.png" alt="close btn">
+            </nav>
+            <ul>
+                <li>
+                    <input class="montRR14" type="search" placeholder="Search by category, name ..." title="search button"> 
+                    <input type="button" value="close">
+                </li>
+                <li><a href="account_sign.html">account</a></li>
+                <li><a href="map.html">map</a></li>
+                <li><a href="cart.html">cart</a></li>
+                <li><img src="images/ico_header_menu.png" alt="header menu"></li>
+            </ul>
+        </div>
+    </header>
+    <section class="listContainer">
+        <div class="flexA wrapSM JCCSM AICD">
+            <div>
+                <h2 class="barHI54">Explore all things DW.</h2>
+                <p class="barRO16">From customized drums to industry standard hardware and parts, all DW product are the result of 50 years of inspiration, innovation, and craftsmanship.</p>
+            </div>
+            <img src="images/bg_products_shopall.png" alt="all product">
+        </div>
+        <ul class="flexAJCBD textCenter">
+            <li>
+                <a href="products_drums_01.html"><img src="images/nav_drums.png" alt="drums list"></a>      
+                <strong class="montRR16">Drums</strong>
+                <small class="nunMM14">Handcrafted to your sound.</small>
+            </li>
+            <li>
+                <a href="products_pedals_01.html"><img src="images/nav_pedals.png" alt="pedals list"></a>      
+                <strong class="montRR16">Pedals</strong>
+                <small class="nunMM14">A pedal for your pocket.</small>
+            </li>
+            <li>
+                <a href="products_hardware_01.html"><img src="images/nav_hardware.png" alt="hardware list"></a>      
+                <strong class="montRR16">Hardware</strong>
+                <small class="nunMM14">Built to last.</small>
+            </li>
+            <li>
+                <a href="products_software.html"><img src="images/nav_software.png" alt="software list"></a>      
+                <strong class="montRR16">Software</strong>
+                <small class="nunMM14">DW Drums. Now virtual.</small>
+            </li>
+            <li>
+                <a href="products_parts_01.html"><img src="images/nav_parts.png" alt="parts list"></a>      
+                <strong class="montRR16">Parts and Accessories</strong>
+                <small class="nunMM14">Mod out your DW kit.</small>
+            </li>
+        </ul>
+        <div>
+            <h3 class="rhcUL36 floatBoxNERM">
+                Product All
+                <small>sort menu</small>
+            </h3>
+            <div>
+                <span class="montMM12">SORT:</span>
+                <span class="montMM12">Price to</span>
+                <input type="radio" name="priceSelect" id="lowPrice" checked>
+                <label class="montMM12" for="lowPrice">Low</label>
+                <span>/</span>
+                <input type="radio" name="priceSelect" id="highPrice">
+                <label class="montMM12" for="highPrice">High</label>
+                <span class="graphPrice">
+                    <span>pricegraph1</span>
+                    <span>pricegraph2</span>
+                    <span>pricegraph3</span>
+                </span>
+                <span class="montMM12">GRID:</span>
+                <input type="radio" name="gridSelect" id="secondRow">
+                <label class="montMM12" for="secondRow">2</label>
+                <input type="radio" name="gridSelect" id="thirdRow" checked>
+                <label class="montMM12" for="thirdRow">3</label>
+                <span class="boxGrid">
+                    <span>gridbox1</span>
+                    <span>gridbox2</span>
+                    <span>gridbox3</span>
+                    <span>gridbox4</span>
+                    <span>gridbox5</span>
+                    <span>gridbox6</span>
+                    <span>gridbox7</span>
+                    <span>gridbox8</span>
+                    <span>gridbox9</span>
+                </span>
+            </div>
+            <ul class="rowThird floatBoxP">
+                <li>
+                    <a href="product_127.html"><img src="images/product_127_01.png" alt="Complete Practice Kit w/Stand"></a>
+                    <div>
+                        <h4 class="montRR16">Complete Practice Kit w/Stand</h4>
+                        <small class="nunMM14">Multiple</small>
+                        <strong class="nunBB12">$265.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_128.html"><img src="images/product_128.png" alt="Smart Practice Pad Set"></a>
+                    <div>
+                        <h4 class="montRR16">Smart Practice Pad Set</h4>
+                        <small class="nunMM14">10 inch</small>
+                        <strong class="nunBB12">$150.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_129.html"><img src="images/product_129_01.png" alt="5-Piece Cymbal Pad Set"></a>
+                    <div>
+                        <h4 class="montRR16">Collector's Tom Bracket Memory Lock</h4>
+                        <small class="nunMM14">Multiple</small>
+                        <strong class="nunBB12">$70.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_130.html"><img src="images/product_130_01.png" alt="Backstage Knee Practice Pad"></a>
+                    <div>
+                        <h4 class="montRR16">Backstage Knee Practice Pad</h4>
+                        <small class="nunMM14">Compact</small>
+                        <strong class="nunBB12">$42.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_131.html"><img src="images/product_131_01.png" alt="Smart Practice Deadhead Drum Pad"></a>
+                    <div>
+                        <h4 class="montRR16">Smart Practice Deadhead Drum Pad</h4>
+                        <small class="nunMM14">14 Inch</small>
+                        <strong class="nunBB12">$49.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_132.html">
+                        <img src="images/product_132_01_CHR.png" alt="Throw Off Tension Adjustment Knob">
+                        <ul class="nunMM12">
+                            <li class="icoCHR">CHROME</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">Throw Off Tension Adjustment Knob</h4>
+                        <small class="nunMM14">1 finish options available</small>
+                        <strong class="nunBB12">$5.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_133.html"><img src="images/product_133.png" alt="True Pitch Tension Rods, TP30"></a>
+                    <div>
+                        <h4 class="montRR16">True Pitch Tension Rods, TP30</h4>
+                        <small class="nunMM14">2.25 inch Length</small>
+                        <strong class="nunBB12">$7.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_134.html"><img src="images/product_134_01.png" alt="14&quot; DW TrueTone SC Snare Wires"></a>
+                    <div>
+                        <h4 class="montRR16">14" DW TrueTone SC Snare Wires</h4>
+                        <strong class="nunBB12">$35.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_135.html"><img src="images/product_135.png" alt="True Pitch 50 Tension Rods"></a>
+                    <div>
+                        <h4 class="montRR16">True Pitch 50 Tension Rods</h4>
+                        <small class="nunMM14">6 inch snare</small>
+                        <strong class="nunBB12">$112.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_136.html">
+                        <img src="images/product_136_01_CHR.png" alt="Standard Aluminum Floor Tom Legs">
+                        <ul class="nunMM12">
+                            <li class="icoCHR">CHROME</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">Standard Aluminum Floor Tom Legs</h4>
+                        <small class="nunMM14">1 finish options available</small>
+                        <strong class="nunBB12">$100.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_137.html">
+                        <img src="images/product_137_01_CHR.png" alt="Delta II Clip & Pin for Double Chain">
+                        <ul class="nunMM12">
+                            <li class="icoCHR">CHROME</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">Delta II Clip & Pin for Double Chain</h4>
+                        <small class="nunMM14">1 finish options available</small>
+                        <strong class="nunBB12">$8.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_138.html">
+                        <img src="images/product_138_01_CHR.png" alt="9000 Pedal Spring Assembly">
+                        <ul class="nunMM12">
+                            <li class="icoCHR">CHROME</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">9000 Pedal Spring Assembly</h4>
+                        <small class="nunMM14">1 finish options available</small>
+                        <strong class="nunBB12">$35.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_139.html">
+                        <img src="images/product_139.png" alt="Delta Heel Casting with Slope">
+                        <ul class="nunMM12">
+                            <li class="icoBLA">BLACK</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">Delta Heel Casting with Slope</h4>
+                        <small class="nunMM14">1 color options available</small>
+                        <strong class="nunBB12">$43.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_140.html"><img src="images/product_140.png" alt="Chain Clip for Single Chain Pedals"></a>
+                    <div>
+                        <h4 class="montRR16">Chain Clip for Single Chain Pedals</h4>
+                        <strong class="nunBB12">$5.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_141.html">
+                        <img src="images/product_141_01_CHR.png" alt="Pedal Spring Only w/ Felt Insert">
+                        <ul class="nunMM12">
+                            <li class="icoCHR">CHROME</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">Pedal Spring Only w/ Felt Insert</h4>
+                        <small class="nunMM14">1 finish options available</small>
+                        <strong class="nunBB12">$2.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_142.html">
+                        <img src="images/product_142_01_BLA.png" alt="Plastic Bushing for 1&quot; Tube Joint">
+                        <ul class="nunMM12">
+                            <li class="icoBLA">BLACK</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">Plastic Bushing for 1" Tube Joint</h4>
+                        <small class="nunMM14">1 finish options available</small>
+                        <strong class="nunBB12">$180.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_143.html">
+                        <img src="images/product_143_01_CHR.png" alt="Replacement Hi-Hat Spur">
+                        <ul class="nunMM12">
+                            <li class="icoCHR">CHROME</li>
+                        </ul>
+                    </a>
+                    <div>
+                        <h4 class="montRR16">Replacement Hi-Hat Spur</h4>
+                        <small class="nunMM14">1 finish options available</small>
+                        <strong class="nunBB12">$17.00</strong>
+                    </div>
+                </li>
+                <li>
+                    <a href="product_144.html"><img src="images/product_144.png" alt="Hi-Hat Seat Assembly"></a>
+                    <div>
+                        <h4 class="montRR16">Hi-Hat Seat Assembly</h4>
+                        <strong class="nunBB12">$32.00</strong>
+                    </div>
+                </li>
+            </ul>
+            <div class="pager">
+                <a class="nunSS12" href="products_shopall_07.html">Prev</a>
+                <ol class="montMM12">
+                    <li><a href="products_shopall_01.html">1</a></li>
+                    <li><a href="products_shopall_02.html">2</a></li>
+                    <li><a href="products_shopall_03.html">3</a></li>
+                    <li><a href="products_shopall_04.html">4</a></li>
+                    <li><a href="products_shopall_05.html">5</a></li>
+                    <li><a href="products_shopall_06.html">6</a></li>
+                    <li><a href="products_shopall_07.html">7</a></li>
+                    <li class="active">8</li>
+                    <li><a href="products_shopall_09.html">9</a></li>
+                </ol>
+                <a class="nunSS12" href="products_shopall_09.html">Next</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div>
+                <h2 class="montRR16">COMPANY</h2>
+                <ul class="nunMM12">
+                    <li><a href="https://www.dwmf.org/" target="_blank">DW Music Foundation</a></li>
+                    <li><a href="footer_shippping.html">Shipping&Returns</a></li>
+                    <li><a href="footer_warranty.html">Warranty</a></li>
+                    <li><a href="footer_contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="montRR16">SUPPORT</h2>
+                <ul class="nunMM12">
+                    <li><a href="https://support.dwdrums.com/hc/en-us" target="_blank">FAQs</a></li>
+                    <li><a href="footer_legal.html">Legal</a></li>
+                    <li><a href="footer_accessibility.html">Accessibility</a></li>
+                    <li><a href="footer_privacy_policy.html">Privacy Policy</a></li>
+                    <li><a href="footer_terms_of_use.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="montRR16">SUBSCRIBE</h2>
+                <div>
+                    <input class="monRR16" type="email" placeholder="Enter your email for updates" title="email address">
+                    <input type="submit" value="subscribe">
+                    <p class="montRR16">Thanks for subscribing!</p>
+                </div>
+                <ul>
+                    <li><a href="https://www.facebook.com/dwdrums" target="_blank">facebook</a></li>
+                    <li><a href="https://x.com/dwdrums" target="_blank">twitter</a></li>
+                    <li><a href="https://www.instagram.com/dwdrums/" target="_blank">instagram</a></li>
+                    <li><a href="https://www.youtube.com/c/dwdrums" target="_blank">youtube</a></li>
+                </ul>
+            </div>
+            <p class="montMM12">
+                All products listed on this website are done so at U.S. MAP pricing or Minimum Advertised Price. This is the lowest price that an authorized U.S. retailer can advertise products as dictated by the manufacturer. All prices are subject to change without notice.
+                <cite>©2024 Drum Workshop, Inc. All Rights Reserved.</cite>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
