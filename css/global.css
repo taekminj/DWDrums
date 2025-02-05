@@ -1,0 +1,481 @@
+header{
+    background-color: rgba(0, 0, 0, 0.85); position: fixed; width: 100%; z-index: 10;
+}
+header div{
+    position: relative; display: flex; margin: 0 auto;
+}
+header div h1 a img{
+    display: block;
+}
+header div nav ul li{
+    color: var(--GS04);
+}
+header div nav ul li ol{
+    display: none;
+}
+header div>ul li{
+    display: inline-block; vertical-align: middle;
+}
+header div>ul li input[type='search']{
+    display: block; border: none; padding: 0; width: 20px; height: 20px; color: var(--GS01);
+    text-indent: -9999px; cursor: default; box-sizing: border-box;
+    background: url('../images/ico_search.svg') left no-repeat;
+}
+header div>ul li input[type='search'].active{
+    text-indent: 0; padding: 0 0 0 35px;
+}
+header div>ul li input[type='search']:focus-visible{
+    outline: none;
+}
+header div>ul li input[type='search']::-webkit-search-cancel-button{
+    display: none;
+}
+header div>ul li input[type='search']::placeholder{
+    font-family: 'Montserrat'; font-size: 14px; font-weight: 400; line-height: 20px; color: var(--GS06);
+}
+header div>ul li input[type='button']{
+    border: none; padding: 0; text-indent: -9999px; width: 0; height: 12px;
+    position: absolute; top: 4px; right: 0;
+    background: url('../images/btn_search_close.png') no-repeat;
+}
+header div>ul li input[type='button'].active{
+    width: 13px;
+}
+header div>ul li a{
+    display: block; text-indent: -9999px; width: 20px; height: 20px;
+    background-position: center; background-repeat: no-repeat;
+}
+header div>ul li:nth-child(2) a{background-image: url("../images/ico_account.svg");}
+header div>ul li:nth-child(3) a{background-image: url("../images/ico_map.svg");}
+header div>ul li:nth-child(4) a{background-image: url("../images/ico_cart.svg");}
+footer{
+    background-color: var(--GS08); padding: var(--sp80) 0; box-sizing: border-box;
+    margin-top: var(--sp150);
+}
+footer>div div h2{
+    margin-bottom: var(--sp25); color: var(--GS01);
+}
+footer>div div:nth-child(3){
+    color: var(--GS01);
+}
+footer>div div:nth-child(3) div{
+    position: relative; margin-bottom: var(--sp30); overflow: hidden;
+}
+footer>div div:nth-child(3) div:after{
+    content: ''; display: block; clear: both;
+}
+footer>div div:nth-child(3) div *:not(p){
+    float: left; box-sizing: border-box;
+}
+footer>div div:nth-child(3) div input{
+    background-color: var(--GS07); border: none; line-height: 48px;
+}
+footer>div div:nth-child(3) div input.active{
+    visibility: hidden;
+}
+footer>div div:nth-child(3) div input[type='email']{
+    border-radius: 2px; color: inherit; padding: 0 0 0 var(--sp20);
+}
+footer>div div:nth-child(3) div input[type='email']:focus-visible{
+    outline: none;
+}
+footer>div div:nth-child(3) div input[type='email']::placeholder{
+    font-family: 'Montserrat'; font-size: 16px; font-weight: 400; color: var(--GS06);
+}
+footer>div div:nth-child(3) div input[type='submit']{
+    text-indent: -9999px; background: url('../images/arrow_subscribe.png') center no-repeat var(--GS07);
+    max-width: 44px; padding: 0 var(--sp10); margin-left: 1px;
+}
+footer>div div:nth-child(3) div p{
+    position: absolute; top: 20%; left: 0; opacity: 0; pointer-events: none;
+    transform: translateX(175%); transition: transform 0.2s, opacity 0.5s;
+}
+footer>div div:nth-child(3) div p.active{
+    transform: translateX(0); opacity: 1;
+}
+footer>div div:nth-child(3) ul li{
+    display: inline-block;
+}
+footer>div div:nth-child(3) ul li:not(:first-child){
+    margin-left: var(--sp30);
+}
+footer>div div:nth-child(3) ul li a{
+    text-indent: -9999px; background-repeat: no-repeat;
+    height: 20px; position: relative; overflow: hidden;
+}
+footer>div div:nth-child(3) ul li:nth-child(1) a{background-image: url('../images/footer_sns_01.png'); width: 12px;}
+footer>div div:nth-child(3) ul li:nth-child(2) a{background-image: url('../images/footer_sns_02.png'); width: 20px;}
+footer>div div:nth-child(3) ul li:nth-child(3) a{background-image: url('../images/footer_sns_03.png'); width: 20px;}
+footer>div div:nth-child(3) ul li:nth-child(4) a{background-image: url('../images/footer_sns_04.png'); width: 28px;}
+footer>div div:nth-child(3) ul li:nth-child(1) a:before{background-image: url('../images/footer_sns_hover_01.png');}
+footer>div div:nth-child(3) ul li:nth-child(2) a:before{background-image: url('../images/footer_sns_hover_02.png');}
+footer>div div:nth-child(3) ul li:nth-child(3) a:before{background-image: url('../images/footer_sns_hover_03.png');}
+footer>div div:nth-child(3) ul li:nth-child(4) a:before{background-image: url('../images/footer_sns_hover_04.png');}
+footer>div>p,
+footer>div div ul{
+    color: var(--GS05);
+}
+footer>div div ul li a{
+    display: block;
+}
+footer>div div:not(:nth-child(3), :nth-child(4)) ul li:not(:last-child){
+    margin-bottom: var(--sp15);
+}
+footer>div>p cite{
+    display: block; padding-top: var(--sp50); font-style: normal;
+}
+
+@media screen and (max-width: 767px){
+    header>div,
+    main>div:first-of-type div,
+    main>div:nth-of-type(2),
+    main>ul,
+    main>div:nth-of-type(4),
+    main>div:nth-of-type(5),
+    main>div:nth-of-type(6),
+    main>div:nth-of-type(7),
+    [class$='listContainer']>ul,
+    [class$='listContainer']>div:last-of-type,
+    .listContainer .contentIcon>div,
+    .collector>:last-of-type,
+    [class$='Child']>:last-of-type,
+    .performance>:last-of-type,
+    .design>:last-of-type,
+    [class^='dwe'] .placeContainer div,
+    [class^='dwe']>div:nth-of-type(2),
+    [class^='drumsetDwe']>ol,
+    [class^='cymbalDwe']>div:nth-of-type(2),
+    [class*=features],
+    .software>div:nth-child(2),
+    .listContainer>span,
+    .detailContainer,
+    .stories>*:not(.placeContainer),
+    .placeContainer>div,
+    .artistContainer>*:not(.placeContainer),
+    .artistDetailContainer,
+    .dwFiftyContainer>div:nth-of-type(2)>*:not(div:nth-of-type(2)),
+    .bronzeContainer>*:not(.placeContainer),
+    .signContainer,
+    .forgotContainer,
+    .createAccountContainer,
+    .myAccount,
+    .profileContainer,
+    .cartContainer,
+    .shippingContainer,
+    .footerContainer,
+    footer>div{
+        padding: 0 2%;
+    }
+    header div:after{
+        left: 2%;
+    }
+    header div h1 a img{
+        max-width: 65px;
+    }
+    header div nav>img{
+        right: 2%;
+    }
+    header div>ul{
+        margin-left: auto; align-self: center;
+    }
+    header div>ul li:not(:first-child){
+        margin-left: var(--sp15);
+    }
+    header div>ul li:has(input[type='search'].active){
+        position: absolute; top: 0; left: 0; width: 100%; height: 50px;
+        background-color: #262626; display: flex; align-items: center; justify-content: center;
+    }
+    header div>ul li input[type='search'].active{
+        min-width: 247px;
+    }
+    header div>ul li input[type='button'].active{
+        position: static;
+    }
+    footer>div>div{
+        margin-bottom: var(--sp40);
+    }
+    footer>div>div:nth-child(-n+2){
+        overflow: hidden;
+    }
+    footer>div>div:nth-child(-n+2) h2{
+        margin-bottom: 0; transition: margin-bottom 0.3s;
+    }
+    footer>div>div:nth-child(-n+2) h2.active{
+        margin-bottom: var(--sp25);
+    }
+    footer>div>div:nth-child(-n+2) h2:after{
+        content: url('../images/arrow_footer_folder.png'); float: right;
+        transition: transform 0.3s linear;
+    }
+    footer>div>div:nth-child(-n+2) h2.active:after{
+        transform: rotateX(180deg);
+    }
+    footer>div>div:nth-child(-n+2) ul{
+        height: 0; opacity: 0; pointer-events: none; transition: all 0.3s;
+    }
+    footer>div>div:nth-child(-n+2) h2.active+ul{
+        opacity: 1; pointer-events: auto;
+    }
+    footer>div div:nth-child(3) div input[type='email']{
+        text-overflow: ellipsis; 
+    }
+}
+
+@media screen and (max-width: 1279px){
+    header div nav{
+        width: 100%; position: absolute; top: 0; left: 0; text-align: center;
+        background-color: var(--GS08); z-index: 100; padding: var(--sp50) 0;
+        transform: translateY(-100%); transition: transform 0.3s ease;
+    }
+    header div nav.active{
+        display: block; transform: translateY(0);
+    }
+    header div nav ul>li:not(:last-child){
+        margin-bottom: var(--sp15);
+    }
+    header div nav ul>li:not(:last-child) span{
+        position: relative; display: inline-block; margin-bottom: var(--sp15);
+    }
+    header div nav ul>li:not(:last-child) span:after{
+        content: ''; position: absolute; top: 0; right: -20px; width: 9px; height: 20px;
+        background: url('../images/arrow_header.png') no-repeat center;
+        transition: transform 0.5s ease;
+    }
+    header div nav ul>li.active span:after{
+        transform: rotateX(180deg);
+    }
+    header div nav ul li ol{
+        background-color: var(--GS01); padding: var(--sp20) 0;
+    }
+    header div nav ul li ol li:not(:last-child){
+        margin-bottom: var(--sp30);
+    }
+    header div nav ul li a{
+        display: block;
+    }
+    header div nav>img{
+        position: absolute; top: 40px;
+    }
+    header div>ul li img{
+        display: block;
+    }
+    footer>div div:nth-child(3) div{
+        max-width: 320px;
+    }
+    footer>div div:nth-child(3) div input[type='email']{
+        width: 86.25%;
+    }
+    footer>div div:nth-child(3) div input[type='submit']{
+        width: calc(13.75% - 1px);
+    }
+    footer>div>p cite{
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    header>div,
+    main>div:first-of-type div,
+    main>div:nth-of-type(2),
+    main>ul,
+    main>div:nth-of-type(4),
+    main>div:nth-of-type(5),
+    main>div:nth-of-type(6),
+    main>div:nth-of-type(7),
+    [class$='listContainer']>ul,
+    [class$='listContainer']>div:last-of-type,
+    .listContainer .contentIcon>div,
+    .collector>:last-of-type,
+    [class$='Child']>:last-of-type,
+    .performance>:last-of-type,
+    .design>:last-of-type,
+    [class^='dwe'] .placeContainer div,
+    [class^='dwe']>div:nth-of-type(2),
+    [class^='drumsetDwe']>ol,
+    [class^='cymbalDwe']>div:nth-of-type(2),
+    [class*=features],
+    .software>div:nth-child(2),
+    .detailContainer,
+    .stories>*:not(.placeContainer),
+    .placeContainer>div,
+    .artistContainer>*:not(.placeContainer),
+    .artistDetailContainer,
+    .dwFiftyContainer>div:nth-of-type(2)>*:not(div:nth-of-type(2)),
+    .bronzeContainer>*:not(.placeContainer),
+    .myAccount,
+    .profileContainer,
+    .cartContainer,
+    .shippingContainer,
+    .footerContainer,
+    footer>div{
+        padding: 0 3%;
+    }
+    header div:after{
+        left: 3%;
+    }
+    header div nav>img{
+        right: 3%;
+    }
+    header div>ul{
+        top: 50%; right: 3%; transform: translateY(-50%);
+    }
+    footer>div{
+        flex-wrap: wrap; justify-content: space-between;
+    }
+    footer>div div:nth-child(3){
+        width: 46%;
+    }
+    footer>div>p{
+        margin-top: var(--sp50);
+    }
+}
+
+@media screen and (min-width: 768px){
+    header div:after{
+        content: "United States"; display: block; background-color: var(--GS08);
+        font-family: "Montserrat"; font-size: 12px; font-weight: 500; color: var(--GS01);
+        text-align: center; line-height: 20px; width: 100%; max-width: 130px;
+        position: absolute; top: 100px; 
+    }
+    header div>ul{
+        position: absolute;
+    }
+    header div>ul li:first-child{
+        position: relative;
+    }
+    header div>ul li:not(:first-child){
+        margin-left: var(--sp20);
+    }
+    header div>ul li input[type='search']{
+        transition: width 0.4s;
+    }
+    header div>ul li input[type='search'].active{
+        width: 290px; 
+    }
+    header div>ul li input[type='button']{
+        transition: width 0.3s ease-in-out;
+    }
+    footer>div{
+        display: flex; margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    header>div,
+    main>div:first-of-type div,
+    main>div:nth-of-type(2),
+    main>ul,
+    main>div:nth-of-type(4),
+    main>div:nth-of-type(5),
+    main>div:nth-of-type(6),
+    main>div:nth-of-type(7),
+    [class$='listContainer']>ul,
+    [class$='listContainer']>div:last-of-type,
+    .listContainer .contentIcon>div,
+    .collector>:last-of-type,
+    [class$='Child']>:last-of-type,
+    .performance>:last-of-type,
+    .design>:last-of-type,
+    [class^='dwe'] div:nth-of-type(2),
+    [class^='drumsetDwe']>ol,
+    [class^='cymbalDwe']>div:nth-of-type(2),
+    [class*=features],
+    [class^='software'] div:nth-of-type(3),
+    .listContainer>span,
+    .detailContainer,
+    .stories>*:not(.placeContainer),
+    .artistContainer>*:not(.placeContainer),
+    .dwFiftyContainer>div:nth-of-type(2)>*:not(div:nth-of-type(2)),
+    .bronzeContainer>*:not(.placeContainer),
+    .myAccount,
+    .cartContainer,
+    footer>div{
+        max-width: 1600px;
+    }
+    header div:before{
+        content: ""; display: block; background-color: var(--GS06); width: calc(100% - 130px); height: 1px;
+        position: absolute; top: 50%; right: 0;
+    }
+    header div:after{
+        left: 0;
+    }
+    header div nav{
+        padding-left: 1.25%; width: 55.5%; min-width: 880px; max-width: 885px; box-sizing: border-box;
+    }
+    header div nav ul{
+        position: relative; font-size: 0;
+    }
+    header div nav ul .active,
+    header div nav ul li *:hover{
+        color: var(--GS01);
+    }
+    header div nav ul li{
+        display: inline-block; 
+    }
+    header div nav ul>li:first-child{
+        padding-right: 1.5%;
+    }
+    header div nav ul>li:nth-child(2){
+        padding: 0 1.5%;
+    }
+    header div nav ul>li:last-child{
+        padding-left: 1.5%;
+    }
+    header div nav ul li ol{
+        width: 100%; position: absolute; left: 0;
+    }  
+    header div nav ul li ol li:not(:first-child){
+        margin-left: 3%;
+    }
+    header div nav ul>li :first-child,
+    header div nav ul li ol li a{
+        line-height: 50px;
+    }
+    header div nav ul>li.active ol,
+    header div nav ul>li ol.active{
+        display: block;
+    }
+    header div nav ul li:hover ol{
+        display: block;
+    }
+    header div nav ul:has(>li:last-child.active) li ol,
+    header div nav ul:has(>li:nth-child(2).active) li:first-child ol,
+    header div nav ul:has(>li:first-child.active) li:nth-child(2) ol{
+        display: none;
+    }
+    header div nav ul>li span:hover{
+        cursor: default;
+    }
+    header div nav>img{
+        display: none;
+    }
+    header div>ul{
+        top: 0; right: 0; padding-top: var(--sp15);
+    }
+    header div>ul li:nth-child(5){
+        display: none;
+    }
+    footer>div>div:not(:first-child){
+        margin-left: 9.375%;
+    }
+    footer>div div:nth-child(3){
+        width: 23.125%; 
+    }
+    footer>div div:nth-child(3) div input[type='email']{
+        width: 88%; max-width: 325px;
+    }
+    footer>div div:nth-child(3) div input[type='submit']{
+        width: calc(12% - 1px);
+    }
+    footer>div div:nth-child(3) ul li a:before{
+        content: ''; opacity: 0; width: 100%; height: 0; background-repeat: no-repeat;
+        position: absolute; left: 0; top: 0; transition: height 0.5s ease, opacity 0.5s ease;
+    }
+    footer>div div:nth-child(3) ul li a:hover:before{
+        opacity: 1; height: 100%;
+    }
+    footer>div>p{
+        max-width: 368px; line-height: 18px; margin-left: auto;
+    }
+}
+
