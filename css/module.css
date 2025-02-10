@@ -118,18 +118,6 @@
 [class*='brS05']{color: var(--BRS05);}
 [class*='grS03']{color: var(--GRS03);}
 [class*='grS04']{color: var(--GRS04);}
-/* [class*='mB10']{margin-bottom: var(--sp10);}
-[class*='mB15']{margin-bottom: var(--sp15);}
-[class*='mB20']{margin-bottom: var(--sp20);}
-[class*='mB25']{margin-bottom: var(--sp25);}
-[class*='mB30']{margin-bottom: var(--sp30);}
-[class*='mB40']{margin-bottom: var(--sp40);}
-[class*='mB50']{margin-bottom: var(--sp50);}
-[class*='mB60']{margin-bottom: var(--sp60);}
-[class*='mB70']{margin-bottom: var(--sp70);}
-[class*='mB80']{margin-bottom: var(--sp80);}
-[class*='mB100']{margin-bottom: var(--sp100);}
-[class*='mB120']{margin-bottom: var(--sp120);} */
 [class*='disB']{display: block;}
 
 [class^='snsIco']{

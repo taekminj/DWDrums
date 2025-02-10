@@ -186,7 +186,7 @@ $(document).ready(function() {
         $('#player').hide();
         $('.btnYoutubePlay').click(function() {
             $('#player').show();
-            $('.btnVideo').hide();
+            $(this).hide();
             $('.playThumbnail').hide();
             $('.videoBox').addClass('active');
         });
@@ -283,10 +283,10 @@ $(document).ready(function() {
 
     function changeRow(){
         $('#secondRow').click(function(){
-            $('ul.rowThird').attr('class','rowSecond');
+            $('ul.rowThird').attr('class',$('ul.rowThird').attr('class').replace('rowThird','rowSecond'));
         });
         $('#thirdRow').click(function(){
-            $('ul.rowSecond').attr('class','rowThird');
+            $('ul.rowSecond').attr('class',$('ul.rowSecond').attr('class').replace('rowSecond','rowThird'));
         });
     }
 

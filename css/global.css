@@ -385,6 +385,7 @@ footer>div>p cite{
     .detailContainer,
     .stories>*:not(.placeContainer),
     .artistContainer>*:not(.placeContainer),
+    .artistDetailContainer,
     .dwFiftyContainer>div:nth-of-type(2)>*:not(div:nth-of-type(2)),
     .bronzeContainer>*:not(.placeContainer),
     .myAccount,

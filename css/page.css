@@ -1,9 +1,6 @@
 body:has(.artistDetailContainer){
     background-color: var(--GS08);
 }
-/* header+*{
-    margin-bottom: var(--sp150);
-}  footer margin-top 대체?*/
 .listContainer>span button,
 .artistDetailContainer figcaption p,
 .contactUs input::placeholder,
@@ -665,7 +662,7 @@ main>ul li div a{
     margin-bottom: var(--sp40);
 }
 .detailContainer #panelFinish>div ul{
-    gap: var(--sp20) 3.26%;
+    display: flex; flex-wrap: wrap; gap: var(--sp20) 3.26%;
 }
 .detailContainer #panelFinish>div ul li *{
     max-width: 180px;
@@ -1117,6 +1114,9 @@ main>ul li div a{
 .SevenContainer>div:nth-of-type(2)>div:last-of-type>ul>li.active strong:after{
     transform: translateY(-50%) rotateX(180deg);
 }
+.SevenContainer>div:nth-of-type(2)>div:last-of-type>ul>li ol{
+    padding-bottom: var(--sp40);
+}
 .SevenContainer>div:nth-of-type(2)>div:last-of-type>ul>li ol li a{
     background-color: rgba(0, 0, 0, 0.05);
 }
@@ -1348,6 +1348,12 @@ main>ul li div a{
 .orderContainer>ul>li>div:nth-child(3)>div>div>span .btnSend:last-of-type{
     background-color: var(--RS03); border-color: var(--RS03); margin-left: 7%;
 }
+.orderContainer>ul>li .stateShipping p{
+    color: var(--BS03);
+}
+.orderContainer>ul>li>div:nth-child(3):not([class^='state']) p{
+    color: var(--RS01);
+}
 .profileContainer{
     margin: 0 auto var(--sp150);
 }
@@ -1358,7 +1364,7 @@ main>ul li div a{
     max-width: 420px;
 }
 .mapContainer>div:first-of-type{
-    background-color: rgba(255, 226, 186, 0.3); padding: var(--sp60) var(--sp20) 0;
+    background-color: rgba(255, 226, 186, 0.3); padding: var(--sp60) var(--sp20);
     overflow-y: auto; box-sizing: border-box;
 }
 .mapContainer>div:first-of-type input{
@@ -1824,11 +1830,11 @@ main>ul li div a{
         order: 1; width: 100%;
     }
     [class^='dwe']>div:nth-of-type(2)>div:last-of-type{
-        position: relative; margin: var(--sp160) 0 var(--sp100);
+        position: relative; overflow: hidden; margin: 90px 0 var(--sp100); padding-top: 95px;
     }
     [class^='dwe']>div:nth-of-type(2)>div:last-of-type:after{
         content: '';  height: 100%; background: url('../images/bg_soundworks_02.png') no-repeat center;
-        position: absolute; top: 0; left: 50%; transform: translate(-50%,-25%) rotateZ(-10deg);
+        position: absolute; top: 12%; left: 50%; transform: translate(-50%,-25%) rotateZ(-10deg);
     }
     [class^='dwe']>div:nth-of-type(2)>ul:last-of-type{
         position: relative; max-width: 720px; 
@@ -2994,14 +3000,13 @@ main>ul li div a{
         transform: scale(1.2); opacity: 0.5;
     }
     .artistDetailContainer{
-        max-width: 1751.5px; display: flex; gap: 0 4.56%;
+        margin: 0 auto; display: flex; gap: 0 4.56%;
     }
     .artistDetailContainer>*{
         padding-top: var(--sp100);
     }
     .artistDetailContainer img{
-        width: 57.5%; max-width: 1000px; position: sticky; top: 0;
-        align-self: flex-start;
+        width: 57.5%; position: sticky; top: 0; align-self: flex-start;
     }
     .dwFiftyContainer .placeContainer{
         padding-left: 8.33%;
