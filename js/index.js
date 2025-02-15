@@ -741,7 +741,11 @@ $(document).ready(function() {
 
         $('.deletePopup').click(function(){
             $('.checkPopupDelete').addClass('active');
-        })
+        });
+
+        $('.updatePopup').click(function(){
+            $('.successUpdate').addClass('active');
+        });
 
         $('.checkPopupDelete input').click(function(){
             $(this).parent().removeClass('active');
