@@ -188,6 +188,7 @@ $(document).ready(function() {
             $('#player').show();
             $('.playThumbnail').hide();
             $('.videoBox').addClass('active');
+            $(this).closest('ul').siblings('div').find('.btnVideo').hide();
             if($(this).hasClass('btnVideo')){
                 $(this).hide();
             }
