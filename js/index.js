@@ -186,9 +186,11 @@ $(document).ready(function() {
         $('#player').hide();
         $('.btnYoutubePlay').click(function() {
             $('#player').show();
-            $(this).hide();
             $('.playThumbnail').hide();
             $('.videoBox').addClass('active');
+            if($(this).hasClass('btnVideo')){
+                $(this).hide();
+            }
         });
     };
     
