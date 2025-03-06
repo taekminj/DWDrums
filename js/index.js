@@ -471,9 +471,6 @@ $(document).ready(function() {
             currentPanel='#'+$(this).attr('data-panel');
             $(currentPanel).addClass('active');
         });
-        // $('.detailContainer .btnClose').click(function(){
-        //     $(currentPanel).removeClass('active');
-        // });
         $('[class*=btnClose]').click(function(){
             $(this).parent('div').removeClass('active');
         });

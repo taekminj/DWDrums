@@ -271,6 +271,17 @@
     margin: var(--sp15) auto var(--sp10);
 }
 
+#introPopup{
+    display: none; width: 100%; max-width: 740px; height: 300px;
+    position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    z-index: 1; padding: var(--sp40); box-sizing: border-box; line-height: 35px;
+    align-content: center; border: 3px solid var(--GS08); border-radius: 10px;
+    background-color: #ececec; box-shadow: 0 0 30px var(--GS08);
+}
+#introPopup.active{
+    display: block;
+}
+
 .videoBox.active,
 .videoContent{
     position: relative;
@@ -896,43 +907,3 @@ span:has(.icoVisibility) input[type='text']~input{
         max-width: 800px;
     }
 }
-/* @media screen and (max-width: 767px){
-    [class*='flexM']{display: flex;}
-    [class*='wrapM']{flex-wrap: wrap;}
-    .textCenterM{text-align: center;}
-    .textRightM{text-align: right;}
-    .marCenM{margin: 0 auto;}
-} */
-/* @media screen and (max-width: 1279px){
-    [class*='flexSM']{display: flex;}
-    [class*='wrapSM']{flex-wrap: wrap;}
-    [class*='JCCSM']{justify-content: center;}
-    .textCenterSM{text-align: center;}
-    .textRightSM{text-align: right;}
-    .marCenSM{margin: 0 auto;}
-} */
-/* @media screen and (min-width: 768px) and (max-width: 1279px){
-    .textCenterT{text-align: center;}
-    .marCenT{margin: 0 auto;}
-} */
-/* @media screen and (min-width: 768px){
-    [class*='flexST']{display: flex;}
-    [class*='wrapST']{flex-wrap: wrap;}
-    [class*='JCBST']{justify-content: space-between;}
-    [class*='JCCST']{justify-content: center;}
-    .textCenterST{text-align: center;}
-    .marCenST{margin: 0 auto;}
-} */
-/* @media screen and (min-width: 1280px){
-    [class*='flexD']{display: flex;}
-    [class*='JCCAICD']{justify-content: center; align-items: center;}
-    [class*='AICD']{align-items: center;}
-    [class*='JCBD']{justify-content: space-between;}
-    [class*='ASCD']{align-self: center;}
-    [class*='ASED']{align-self: flex-end;}
-    [class*='JCCD']{justify-content: center;}
-    .textCenterD{text-align: center;}
-    .textRightD{text-align: right;}
-    .textLeftD{text-align: left;}
-    .marCenD{margin: 0 auto;}
-} */
