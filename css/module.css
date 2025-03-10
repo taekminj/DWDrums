@@ -270,16 +270,27 @@
 .checkPopupDelete input:first-of-type{
     margin: var(--sp15) auto var(--sp10);
 }
-
+div:has(#introPopup.active){
+    position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 100; background-color: rgba(0, 0, 0, 0.7);
+}
 #introPopup{
-    display: none; width: 100%; max-width: 740px; height: 300px;
-    position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%);
-    z-index: 1; padding: var(--sp40); box-sizing: border-box; line-height: 35px;
-    align-content: center; border: 3px solid var(--GS08); border-radius: 10px;
-    background-color: #ececec; box-shadow: 0 0 30px var(--GS08);
+    display: none; width: 100%; max-width: 740px; height: 350px;
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+    z-index: 1; padding: 65px 40px 0; box-sizing: border-box; line-height: 35px;
+    border-radius: 10px; box-shadow: 0 0 15px var(--GS08); text-align: center;
+    background: url('../images/intro_popup.png') no-repeat right center var(--GS01);
 }
 #introPopup.active{
     display: block;
+}
+#introPopup b{
+    font-size: 30px; margin-bottom: 20px; display: block;
+}
+#introPopup p{
+    font-family: 'Noto Sans KR'; font-size: 16px; margin-bottom: 50px; color: #1a1a1a;
+}
+#introPopup a{
+    letter-spacing: 2px; color: #262626;
 }
 
 .videoBox.active,
